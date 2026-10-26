@@ -8,7 +8,7 @@ resource "aws_lb_target_group" "catalog" {
   vpc_id      = var.vpc_id
 
   health_check {
-    path                = "/healthz"
+    path                = "/statusz"
     matcher             = "200"
     interval            = 30
     healthy_threshold   = 2

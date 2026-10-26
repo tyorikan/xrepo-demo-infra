@@ -29,8 +29,7 @@ resource "aws_ecs_task_definition" "catalog" {
       ]
       environment = [
         { name = "CATALOG_CACHE_TTL", value = var.catalog_cache_ttl },
-        { name = "LOG_LEVEL", value = "info" },
-        { name = "CATALOG_DB_HOST", value = aws_route53_record.catalog_db.name }
+        { name = "LOG_LEVEL", value = "info" }
       ]
       secrets = [
         { name = "CATALOG_DB_PASSWORD", valueFrom = aws_secretsmanager_secret.catalog_db_password.arn }

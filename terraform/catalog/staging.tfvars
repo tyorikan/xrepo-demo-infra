@@ -1,0 +1,10 @@
+environment               = "staging"
+catalog_cache_ttl         = "60"
+internal_zone_id          = "Z0STG1111AAAA2222BBBB"
+catalog_db_endpoint       = "catalog-db-stg.c1x2y3z4w5v6.ap-northeast-1.rds.amazonaws.com"
+execution_role_arn        = "arn:aws:iam::123456789012:role/catalog-staging-task-execution"
+desired_count             = 1
+vpc_id                    = "vpc-0stg1111aaaa2222b"
+cluster_arn               = "arn:aws:ecs:ap-northeast-1:123456789012:cluster/staging"
+private_subnet_ids        = ["subnet-0stg1111aaaa0001", "subnet-0stg1111aaaa0002"]
+service_security_group_id = "sg-0stg1111aaaa3333c"

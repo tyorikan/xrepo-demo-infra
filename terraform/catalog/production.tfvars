@@ -1,0 +1,10 @@
+environment               = "production"
+catalog_cache_ttl         = "300"
+internal_zone_id          = "Z0PRD9999ZZZZ8888YYYY"
+catalog_db_endpoint       = "catalog-db-prd.q9r8s7t6u5v4.ap-northeast-1.rds.amazonaws.com"
+execution_role_arn        = "arn:aws:iam::123456789012:role/catalog-production-task-execution"
+desired_count             = 4
+vpc_id                    = "vpc-0prd9999zzzz8888y"
+cluster_arn               = "arn:aws:ecs:ap-northeast-1:123456789012:cluster/production"
+private_subnet_ids        = ["subnet-0prd9999zzzz0001", "subnet-0prd9999zzzz0002"]
+service_security_group_id = "sg-0prd9999zzzz7777x"
